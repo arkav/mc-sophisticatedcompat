@@ -1,0 +1,38 @@
+modLoader="javafml" #mandatory
+loaderVersion="[46,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="GNU GENERAL PUBLIC LISCENSE"
+[[mods]] #mandatory
+# The modid of the mod
+modId="sophisticatedcompat" #mandatory
+# The version number of the mod
+version="1.0" #mandatory
+# A display name for the mod
+displayName="Sophisticated Compat" #mandatory
+authors="Arkav" #optional
+description="Lmao"
+displayURL=""
+
+[[dependencies.${mod_id}]]
+    modId="sophisticatedcore"
+    mandatory=true
+    versionRange="any"
+    ordering="AFTER"
+    side="BOTH"
+[[dependencies.${mod_id}]]
+    modId="sophisticatedbackpacks"
+    mandatory=false
+    versionRange="any"
+    ordering="BEFORE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="etched"
+    mandatory=true
+    versionRange="any"
+    ordering="AFTER"
+    side="BOTH"
+# Features are specific properties of the game environment, that you may want to declare you require. This example declares
+# that your mod requires GL version 3.2 or higher. Other features will be added. They are side aware so declaring this won't
+# stop your mod loading on the server for example.
+#[features.${mod_id}]
+#openGLVersion="[3.2,)"

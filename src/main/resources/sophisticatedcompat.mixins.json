@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.arkav.sophisticatedcompat.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "mixins.sophisticatedcompat.refmap.json",
+  "mixins": [
+    "JukeboxUpgradeItemWrapperMixin",
+    "JukeboxUpgradeItemWrapperItemStackHandlerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
